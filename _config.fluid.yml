@@ -61,3 +61,26 @@ ignore: null
 theme: nexmoe
 deploy:
   type: ''
+
+about:
+  avatar: /img/avatar.png
+  name: "云间世界"
+  intro: "顺着风的方向" 
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/yunjianshijie', tip: 'GitHub' }
+    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }
+
+# navbar:
+#   menu:
+#     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+
+links:
+  items:
+    - {
+      title: 'Fluid Docs', 
+      intro: 'yyyy', ##简介
+      link: 'https://blog.phom.space/',
+      avatar: '/img/favicon.png' ##头像
+    }
+  default_avatar: /img/avatar.png
+

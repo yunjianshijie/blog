@@ -1,5 +1,6 @@
 ---
 title: shell代码
+abbrlink: 5315
 ---
 
 ## 代码部分
