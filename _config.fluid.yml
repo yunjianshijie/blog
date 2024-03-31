@@ -26,7 +26,7 @@ external_link:
   enable: true
   field: site
   exclude: ''
-banner_img: https://i0.hdslb.com/bfs/article/95f73d9fa17b3ca67c1c81b3ce6479c5f15474e8.jpg@1256w_540h_!web-article-pic.avif  # 全局大图
+banner_img:  https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg # 全局大图
 
 filename_case: 0
 render_drafts: false
@@ -146,10 +146,10 @@ post:
 links:
   items:
     - {
-      title: 'Fluid Docs', 
-      intro: 'yyyy', ##简介
+      title: 'Ph0m', 
+      intro: '贵在坚持', ##简介
       link: 'https://blog.phom.space/',
-      avatar: '/img/favicon.png' ##头像
+      avatar: https://files.superbed.cn/store/images/dd/6a/65e1df0c9f345e8d03bcdd6a.png ##头像
     }
   default_avatar: /img/avatar.png
 
