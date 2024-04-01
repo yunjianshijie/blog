@@ -26,7 +26,7 @@ external_link:
   enable: true
   field: site
   exclude: ''
-banner_img:  https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg # 全局大图
+banner_img:  https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
 
 filename_case: 0
 render_drafts: false

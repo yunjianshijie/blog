@@ -2,7 +2,7 @@
 ---
 title: cpp学习
 abbrlink: 16106
-# index_img: /img/example.jpg
+index_img: https://sm.ms/image/9iWy27mcvhU4qXP 
 ---
 
 ## 重载
@@ -22,7 +22,7 @@ void display(double num) {
 int main() {
     display(10);
     display(3.14);
-    return 0;
+    return 0;
 }
 
 ~~~
