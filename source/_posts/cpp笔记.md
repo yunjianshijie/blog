@@ -2,7 +2,8 @@
 ---
 title: cpp学习
 abbrlink: 16106
-index_img: https://sm.ms/image/9iWy27mcvhU4qXP 
+# index_img:   https://sm.ms/image/9iWy27mcvhU4qXP 
+index_img: /img/elysia2.jpg
 ---
 
 ## 重载

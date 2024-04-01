@@ -1,6 +1,7 @@
 ---
 title: shell代码
 abbrlink: 5315
+index_img: /img/elysia1.jpg
 ---
 
 ## 代码部分
