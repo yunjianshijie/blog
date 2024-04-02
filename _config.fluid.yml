@@ -70,7 +70,8 @@ deploy:
 
 ## 关于
 about:
-  avatar: /img/elysia1.jpg  #   avatar.png
+  banner_img: /img/yuye1.png
+  avatar: https://q.qlogo.cn/headimg_dl?dst_uin=2098600899&spec=640&img_type=jpg #   avatar.png
   name: "云间世界"
   intro: "顺着风的方向" 
   icons:
@@ -106,7 +107,7 @@ footer:
 
 
 index:
-  banner_img: /img/elysia2.jpg # https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
+  banner_img:  /img/yuye1.png # https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
   slogan: ## 开头打字机
     enable: true
     text: 顺着风的方向
@@ -158,8 +159,13 @@ links:
       link: 'https://blog.phom.space/',
       avatar: https://files.superbed.cn/store/images/dd/6a/65e1df0c9f345e8d03bcdd6a.png ##头像
     }
+    - {
+      title: 'future', 
+      intro: 'Hang on to your dreams ! ', ##简介
+      link: 'https://future.thisis.host/',
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1305969480&s=3 ##头像
+    }
   default_avatar: /img/avatar.png
-
 
 
 
