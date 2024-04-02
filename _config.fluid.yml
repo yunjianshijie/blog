@@ -21,12 +21,12 @@ i18n_dir: ':lang'
 skip_render: null
 new_post_name: ':title.md'
 default_layout: post
-titlecase: false
+titlecase: falseT
 external_link:
   enable: true
   field: site
   exclude: ''
-banner_img:  https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
+
 
 filename_case: 0
 render_drafts: false
@@ -80,13 +80,19 @@ about:
 ## 导航菜单
 navbar:
   blog_title: 云间的小小世界
+  # menu:
+  #   - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
+  #   - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
+  #   - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: '关于' }
+  #   - { key: 'archives', link: '/archives/', icon: 'iconfont icon-archives-fill', name: '归档' }
+  #   - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
   menu:
-    - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
-    - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: '关于' }
-    - { key: 'archives', link: '/archives/', icon: 'iconfont icon-archives-fill', name: '归档' }
-    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
-    
+    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 
 
@@ -100,6 +106,7 @@ footer:
 
 
 index:
+  banner_img: /img/elysia2.jpg # https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
   slogan: ## 开头打字机
     enable: true
     text: 顺着风的方向
