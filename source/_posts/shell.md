@@ -4,6 +4,7 @@ abbrlink: 5315
 index_img: /img/elysia1.jpg
 banner_img: /img/elysia1.jpg
 Date: 2024-03-31
+tags: linux
 ---
 
 ## 代码部分

@@ -153,6 +153,7 @@ post:
 
 ## 友联
 links:
+  banner_img: /img/yuye1.png
   items:
     - {
       title: 'Ph0m', 
@@ -166,7 +167,12 @@ links:
       link: 'https://future.thisis.host/',
       avatar: https://q1.qlogo.cn/g?b=qq&nk=1305969480&s=3 ##头像
     }
-
+    - {
+      title: 'tiny-sky', 
+      intro: '​人生苦短，及时行乐.', ##简介
+      link: 'https://tiny-sky.github.io/',
+      avatar: https://tiny-sky.github.io/img/tiny-sky.png
+    }
   default_avatar: /img/avatar.png
 
 
