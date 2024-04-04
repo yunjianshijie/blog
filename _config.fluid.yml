@@ -173,6 +173,12 @@ links:
       link: 'https://tiny-sky.github.io/',
       avatar: https://tiny-sky.github.io/img/tiny-sky.png
     }
+    - {
+      title: 'g0ubu1i', 
+      intro: '君子不器。', ##简介
+      link: 'https://blog.goubuli.online/',
+      avatar: https://q.qlogo.cn/headimg_dl?dst_uin=1738327323&spec=640&img_type=jpg
+    }
   default_avatar: /img/avatar.png
 
 
