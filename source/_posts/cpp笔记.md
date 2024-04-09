@@ -291,24 +291,178 @@ int main()
 
 #### 拷贝构造函数调用时机
 
-1. 使用一个已经创建完毕的对象来初始化另外一个新对象
+1. 使用一个已经创建完毕的对象来初始化另外一个新对象‘
 2. 值传递的方式给函数参数传值
 3. 以值方式返回局部对象
 
-
 #### 深拷贝与浅拷贝
 
+1. 浅拷贝：简单的赋值操作
+2. 深拷贝：在堆区重新申请空间，进行拷贝操作
+
+~~~ cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Person
+{
+public:
+    int age;
+    int *M_hight;
+    Person()
+    {
+        cout << "无参构造函数" << endl; // 如果不写这个函数，系统空实现（什么都没有）
+    }
+    Person(int a, int hight)
+    {
+        cout << "有参构造函数" << endl;
+        M_hight = new int(hight); // 在堆区开辟一个数据
+        age = a;
+    }
+    Person(const Person &p){
+        cout << "拷贝函数" << endl;
+        age = p.age;
+        M_hight = new int(*p.M_hight); //需要这样深拷贝
+    }
+    ~Person() // 将堆区开辟的数据做释放操作
+    {
+        if (M_hight != NULL)
+        {
+            delete M_hight;
+            M_hight = NULL;
+        }
+        cout << "Person的析构函数" << endl;
+    }
+};
+
+void test01()
+{
+    Person p1(19, 160);
+    cout << "p1 " << p1.age << "  " << *p1.M_hight << endl;
+    Person p2(p1);
+    cout << "p2 " << p2.age << "  " << *p2.M_hight << endl; //浅拷贝，会造成堆区重复释放
+}
+
+int main()
+{
+    test01();
+}
+~~~
+
+#### 初始化列表
+
+作用：c++提供初始化列表语法
+
+语法： 构造函数():属性1(值),属性2(值)... {}
+
+~~~cpp
+
+class  Person {
+    public:
+    int M_a;
+    int M_b;
+    int M_c;
+    // Person (int a,int b ,int c){
+    //     M_a=a;
+    //     M_b=b;
+    //     M_c=c;
+    // }//初始
+
+//初始化列表
+    Person(int a,int b ,int c):M_a(a),M_b(b),M_c(c){} 
+
+}
+
+~~~
+
+#### 类作物一个成员
+
+~~~ cpp
+class Phone{
+    public:
+    string p_Name;
+    Phone(string p_name){
+        p_Name =p_name;
+    }
+}
 
 
+class Person{
+public:
+
+string m_name;
+
+Phone m_phone;
+Person(string name,string phone ): m_name(name),m_phone(phone){
+
+}
+
+};
 
 
+~~~
+
+#### 静态变量
+
+1. 所有对象都共享同一个数据
+2. 编译阶段就分配内存
+3. 类内声明，类外初始化操作
+~~~cpp
+
+class Person
+{
+public:
+    static int a;
+};
+
+void test01(){
+    Person p;
+    cout << p.a;
+}
+int main()
+{
+
+test01(); //如果不初始化静态变量会出错
+
+}
+~~~
+
+`必须初始化且不能初始化在与定义一起`
+
+~~~cpp
+
+void test01()
+{
+    int Person::a = 100; // 在定义和初始化之外 ，后面定义了所以编译 错误
+    Person p;
+
+    cout << Person::a << endl;
+}
+~~~
+
+> 静态变量不属于某一个对象 属于类
+
+1. 通过对象进行访问
+
+2. 通过类名进行访问
+
+~~~ cpp
+cout << Person:: a << endl;
+Person p;
+cout <<p.a << endl;
+~~~
+
+> 静态变量也有权限
 
 
+#### 静态函数
+
+1. 所有对象都共享同一个函数
+2. 静态函数只能访问静态成员
 
 
-
-
-
+### 对象模型 this指针
 
 
 
