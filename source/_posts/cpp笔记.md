@@ -464,6 +464,97 @@ cout <<p.a << endl;
 
 ### 对象模型 this指针
 
+#### 函数变量分开存储
+1. 空对象 ——>c++编译器也给空对象分配一个字节空间 ，是为了区分空对象占内存空位置
+2. 静态变量不属于对象上
+3. 函数也是不在
+
+#### this指针
+
+this指向被调用的成员函数所属的对象
+
+目的：
+1. 解决名称冲突
+2. 返回对象
+
+> 最好成员还是用m_name取名比较好
+
+1:
+~~~cpp
+class Person
+{
+public:
+    int age;
+    Person(int age){
+        this->age = age;//this指针指向
+        Person ::age = age;
+    }
+};
+~~~
+
+2:
+~~~cpp
+class Person
+{
+public:
+    int age;
+    Person Person_add(Person &p)
+    {
+        this->age += p.age;
+        return *this;
+    }
+};
+void test01()
+{
+    Person p(10);
+    Person p2(10);
+    cout << p.Person_add(p2).Person_add(p2).Person_add(p2).age; //这里是40
+    cout << p.age << endl; //值还是20
+}
+~~~
+
+#### 空指针调用成员函数
+允许空指针访问函数，但是如果函数有调用类中数据会报错 （段错误）
+
+~~~cpp
+class Person
+{
+public:
+    int age;
+    void show_name()
+    {
+     cout << "z" << endl;
+    }
+    void show_age()
+    {
+        if(this==NULL){
+            return;
+        }//需要这里一行判断
+     cout << "age= " << age << endl;
+    }
+};
+void test02()
+{
+    Person *p = NULL;
+    p->show_name();
+   // p->show_age();
+}
+~~~
+
+#### const修饰成员函数
+
+1. 常函数：加const
+
+2. 常函数内不可以修改成员属性
+3. 成员属性申明时加上关键词mutale后，在常函数中依旧可以修改
+
+常对象:
+1. 声明对象前加const
+2. 常对象只能调用常函数
+
+ 
+### 友元
+
 
 
 
