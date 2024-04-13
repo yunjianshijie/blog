@@ -1,7 +1,7 @@
 ---
 title: cpp笔记
 abbrlink: 11
-index_img: /img/elysia2.jpg
+index_img: /img/elysia3.png
 banner_img: /img/elysia2.jpg
 date: 2024-04-01
 tags: cpp
