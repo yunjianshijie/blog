@@ -557,4 +557,30 @@ void test02()
 
 
 
+## vector
 
+~~~ cpp
+#inlcude<vector>
+using namespace std;
+std::vector <int> number={1,2,3};//初始化
+numbers.push_back(4);//尾插
+numbers.pop_back();//尾删
+int element=number[2];
+int b=number.at(2);// 使用at()函数访问元素，会进行边界检查
+int size=number.size();//返回元素个数
+bool isempty=number.empty();//判断是否为空
+for(int i=0;i<number.size();i++ ){
+}//循环
+for (int num : numbers) {
+   std::cout << num << " ";
+}
+   std::cout << std::endl;
+numbers.clear(); // 清空所有元素
+std::vector<int>::iterator it=numbers.begin();
+auto its==numbers.begin();
+int fristelement=*its;//开头元素
+//begin() 函数：该函数返回一个迭代器
+~~~ 
+~~~CPP
+std::array V;//比vector更小更高效
+~~~
