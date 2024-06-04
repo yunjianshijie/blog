@@ -71,7 +71,7 @@ deploy:
 
 ## 关于
 about:
-  banner_img: https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg # /img/yuye1.jpg
+  banner_img: /img/yuye2.jpg #  https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg # /img/yuye1.jpg
   avatar: https://q.qlogo.cn/headimg_dl?dst_uin=2098600899&spec=640&img_type=jpg #   avatar.png
   name: "云间世界"
   intro: "顺着风的方向" 
@@ -107,9 +107,9 @@ footer:
     uv_format: "总访客数 {} 人"
 
 archive:
-  banner_img: https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg # /img/yuye1.jpg 
+  banner_img: /img/yuye2.jpg  #https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg # /img/yuye1.jpg 
 index:
-  banner_img: https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg #/img/yuye1.jpg # https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
+  banner_img: /img/yuye2.jpg # https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg #/img/yuye1.jpg # https://sm.ms/image/9iWy27mcvhU4qXP # 全局大图
   slogan: ## 开头打字机
     enable: true
     text: 顺着风的方向
@@ -154,7 +154,7 @@ post:
 
 page404:
   enable: true
-  banner_img:  https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg #/img/yuye1.jpg
+  banner_img: /img/yuye2.jpg # https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg #/img/yuye1.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -164,7 +164,7 @@ page404:
 
 ## 友联
 links:
-  banner_img: https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg #  /img/yuye1.jpg
+  banner_img: /img/yuye2.jpg # https://s21.ax1x.com/2024/06/03/pkJQcWR.jpg #  /img/yuye1.jpg
   enable: true
   banner_img_height: 60
   banner_mask_alpha: 0.3
