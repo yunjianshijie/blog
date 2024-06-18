@@ -570,7 +570,7 @@ int b=number.at(2);// 使用at()函数访问元素，会进行边界检查
 int size=number.size();//返回元素个数
 bool isempty=number.empty();//判断是否为空
 for(int i=0;i<number.size();i++ ){
-}//循环
+}//循环 
 for (int num : numbers) {
    std::cout << num << " ";
 }
@@ -583,4 +583,47 @@ int fristelement=*its;//开头元素
 ~~~ 
 ~~~CPP
 std::array V;//比vector更小更高效
+~~~
+
+
+## 其他
+### 将字符串 数字 相互转换
+将数字转化为字符串
+~~~cpp
+// 将数字转化为字符串
+int num =42;
+std::string str= std::to_string(num);
+
+//std::ostringstream 可以将任意类型的数据转换为字符串。
+int num = 42;
+std::ostringstream oss;
+oss << num;
+std::string str = oss.str();
+//
+double num = 3.14159;
+std::ostringstream oss;
+oss << std::fixed << std::setprecision(4) << num;
+std::string str = oss.str(); // 结果为 "3.1416"
+
+// sprintf()
+int num = 42;
+char buffer[32];
+std::sprintf(buffer, "%d", num);
+std::string str(buffer);
+
+~~~
+
+将字符串转化为数字
+~~~cpp
+std::string str = "42";
+int num = std::stoi(str);
+
+str = "3.14159";
+float fnum = std::stof(str);
+//char * 也可以
+const char* cstr = "42";
+int num = std::atoi(cstr);
+
+cstr = "3.14159";
+double dnum = std::atof(cstr);
 ~~~
