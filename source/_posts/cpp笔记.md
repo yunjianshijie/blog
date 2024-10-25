@@ -627,3 +627,33 @@ int num = std::atoi(cstr);
 cstr = "3.14159";
 double dnum = std::atof(cstr);
 ~~~
+ostringstream string_view
+
+
+### 判断是否为大小写
+
+~~~cpp
+#include <cctype>
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string word1 = "Apple";
+    std::string word2 = "banana";
+
+    if (islower(word1[0])) {
+        std::cout << "First character of '" << word1 << "' is lowercase." << std::endl;
+    } else {
+        std::cout << "First character of '" << word1 << "' is not lowercase." << std::endl;
+    }
+
+    if (islower(word2[0])) {
+        std::cout << "First character of '" << word2 << "' is lowercase." << std::endl;
+    } else {
+        std::cout << "First character of '" << word2 << "' is not lowercase." << std::endl;
+    }
+
+    return 0;
+}
+
+~~~
