@@ -193,6 +193,19 @@ links:
       link: 'https://blog.goubuli.online/',
       avatar: https://q.qlogo.cn/headimg_dl?dst_uin=1738327323&spec=640&img_type=jpg
     }
+    - {
+      title: '桃林饮酒', 
+      intro: '回不去的何止时间', ##简介
+      link: 'https://www.taolin.site/',
+      avatar: https://wsrv.nl/?url=github.com/Taolinyinjiu.png%3fsize=92
+    }
+    - {
+      title: '纸鹿摸鱼处', 
+      intro: '纸鹿至麓不知路，支炉制露不止漉', ##简介
+      link: https://blog.zhilu.cyou/,
+      avatar: https://weavatar.com/avatar/47c0f2e82b76d9b10eb3023df9e02e4e3fdbeaf5b74b842063f207971e7fbe7b?s=160
+    }
+    
   default_avatar: /img/avatar.png
 
 
