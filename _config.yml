@@ -5,7 +5,7 @@ keywords: blog
 author: yunjianworld
 language: zh-CN
 timezone: Asia/Shanghai
-url: http://example.com
+url: https://yunjianworld.fun
 ## permalink: :year/:month/:day/:title/
 favicon: https://q.qlogo.cn/headimg_dl?dst_uin=2098600899&spec=640&img_type=jpg
 permalink: posts/:abbrlink.html  ## 此处可以自己设置 网站link
